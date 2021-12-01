@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  background: #ddb698;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(80%, 90%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(80%, 90%));
+  grid-gap: .5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .5rem;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.container .card {
+  position: relative;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
+  margin: .5rem;
+}
+
+.container .card h6 {
+  opacity: .7;
+  letter-spacing: 2px;
+}
+
+.container .card h2 {
+  color: #444242;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+}
+
+.container .card .right-component {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #f0ecec;
+  border-radius: 0 0 .5rem 0;
+}
+
+.container .card .right-component h2 {
+  color: #fff;
+  position: absolute;
+  width: auto;
+  top: 0rem;
+  right: -1.2rem;
+  left: 9.2rem;
+  text-align: center;
+  background: -webkit-gradient(linear, right top, left top, from(#fe8c00), to(#f83600));
+  background: linear-gradient(to left, #fe8c00, #f83600);
+  letter-spacing: 3px;
+  border-radius: 0 .5rem 0 0;
+  padding: .8rem 1rem;
+  margin: 0;
+}
+
+.container .card .right-component h2::before {
+  position: absolute;
+  content: '';
+  right: 0px;
+  top: 55px;
+  height: 0px;
+  width: 0px;
+  border: .6rem solid #f83600a1;
+  border-bottom: .6rem solid transparent;
+  border-right: .6rem solid transparent;
+}
+
+.container .card .right-component .difficulty {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.container .card .right-component .difficulty .badge {
+  padding: .3rem .8rem;
+  border-radius: 1rem;
+  background: #222222;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.container .card .right-component p {
+  font-size: .9rem;
+  text-align: justify;
+}
+
+.container .card .right-component .button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: .8rem;
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#fe8c00), to(#f83600));
+  background: linear-gradient(to left, #fe8c00, #f83600);
+  padding: .7rem 1.2rem;
+  letter-spacing: 2px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.container .card .right-component .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.container .card .left-component {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fe8c00), to(#f83600));
+  background: linear-gradient(to top, #fe8c00, #f83600);
+  color: #fff;
+  padding: 2rem;
+  max-width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: .5rem 0 0 .5rem;
+}
+
+.container .card .left-component h2 {
+  color: #fff;
+}
+
+.container .card .left-component i {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.container .card:nth-child(2) .left-component {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1488cc), to(#2b32b2));
+  background: linear-gradient(to top, #1488cc, #2b32b2);
+}
+
+.container .card:nth-child(2) .right-component h2 {
+  background: -webkit-gradient(linear, right top, left top, from(#1488cc), to(#2b32b2));
+  background: linear-gradient(to left, #1488cc, #2b32b2);
+}
+
+.container .card:nth-child(2) .right-component h2::before {
+  border-color: #2b32b29d;
+  border-bottom: .6rem solid transparent;
+  border-right: .6rem solid transparent;
+}
+
+.container .card:nth-child(2) .right-component .button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1488cc), to(#2b32b2));
+  background: linear-gradient(to top, #1488cc, #2b32b2);
+}
+
+.container .card:nth-child(3) .left-component {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b0f1a), color-stop(74%, #b91372));
+  background: linear-gradient(to bottom, #6b0f1a 0%, #b91372 74%);
+}
+
+.container .card:nth-child(3) .right-component h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#6b0f1a), color-stop(74%, #b91372));
+  background: linear-gradient(to right, #6b0f1a 0%, #b91372 74%);
+  left: 9rem;
+}
+
+.container .card:nth-child(3) .right-component h2::before {
+  border-color: #6b0f1a9a;
+  border-bottom: .6rem solid transparent;
+  border-right: .6rem solid transparent;
+}
+
+.container .card:nth-child(3) .right-component .button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b0f1a), color-stop(74%, #b91372));
+  background: linear-gradient(to bottom, #6b0f1a 0%, #b91372 74%);
+}
+
+@media screen and (min-width: 920px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(47%, 48%))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(47%, 48%));
+    grid-gap: .5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: .5rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31%, 32.5%))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(31%, 32.5%));
+    grid-gap: .5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: .5rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
